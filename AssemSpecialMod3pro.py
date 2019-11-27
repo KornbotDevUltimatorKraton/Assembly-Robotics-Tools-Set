@@ -980,7 +980,7 @@ class Ui_MainWindow(object):
 if __name__ == "__main__":
     import sys
     try: 
-      hardware = pyfirmata.ArduinoMega("COM4")
+      hardware = pyfirmata.ArduinoMega("/dev/ttyUSB0")
       print("Hardware robotics assembly line connected successfully !")   
     except: 
       print("Hardware connection fail please reconnect and check connection port !")
